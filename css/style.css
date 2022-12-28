@@ -1,0 +1,93 @@
+
+body{background-color:#f3f2ef}
+.header{background-color:white}
+
+.header .website-icon i{
+	color:#0564e8;
+	font-size:40px;
+}
+.form-control{
+	border:none;
+	background-color:#0d6efd1a;
+	
+}
+input {
+	background-color:blue;
+}
+.header .nav-icons a {
+	display:inline-block;
+	text-decoration:none;
+	padding:0 20px;
+	color:#717070f5;
+	font-size:14px;
+	border-bottom:2px white solid;
+}
+.header .nav-icons a i{
+	font-size:22px;
+	padding-bottom:5px;
+	display:block;
+}
+.header .nav-icons a img{
+	border-radius:50%;
+	width:22px;
+	display:block;
+}
+.nav-icons .work{border-left:1px solid lightgray}
+.header .nav-icons div a{
+	color:#c66e10;
+	display:block
+}
+.header .nav-icons a:hover {
+	color:black;
+	border-bottom:2px black solid;
+}
+			/*---------------------------main section starts------------*/
+			
+.profile,.invitation{
+	background-color:white;
+	border-radius:10px;
+}
+.profile {
+	margin:12px;
+	height:100%;}
+
+.recommends {
+	flex-wrap:wrap;
+	background-color:white;
+	margin-top:10px;
+	border-radius:10px;
+}
+.recommends .people{
+	margin:7px 0;
+}
+.recommends .peopleinside{
+	border: solid 1px lightgray;
+	border-radius:5%;
+	overflow:hidden;
+	margin:5px;
+	height:100%;
+}
+.recommends img{
+	width:35%;
+	border-radius:50%;
+	transform:translateY(20%);
+	margin-left:10px;
+}
+.recommends .peoplecontent{
+	padding:20px 15px;
+}
+.recommends .job{
+	margin-bottom:0;
+	min-height:70px;
+	
+	}
+.recommends button{
+	width:100%;
+	color:#0564e8;
+	font-weight:bold;
+	border:2px solid #0564e8;
+	padding:8px 25px;
+	background-color:white;
+	border-radius:30px;
+	text-transform:capitalize;
+}
