@@ -1,25 +1,30 @@
-
-body{background-color:#f3f2ef}
+main{
+	background-color:#f3f2ef;
+}
 .header{background-color:white}
-
-.header .website-icon i{
-	color:#0564e8;
+.header .website-icon {
+	color:#0a66c2;
 	font-size:40px;
 }
-.form-control{
-	border:none;
+.search{
+	padding:5px 10px 0 10px;
 	background-color:#0d6efd1a;
-	
 }
+
+/*
+
 input {
-	background-color:blue;
+	border:none;
+	background-color:transparent;
 }
+
+*/
 .header .nav-icons a {
 	display:inline-block;
 	text-decoration:none;
-	padding:0 20px;
+	padding:0 18px;
 	color:#717070f5;
-	font-size:14px;
+	font-size:12px;
 	border-bottom:2px white solid;
 }
 .header .nav-icons a i{
@@ -41,14 +46,13 @@ input {
 	color:black;
 	border-bottom:2px black solid;
 }
-			/*---------------------------main section starts------------*/
+			/*---------------------------below header section starts------------*/
 			
 .profile,.invitation{
 	background-color:white;
 	border-radius:10px;
 }
 .profile {
-	margin:12px;
 	height:100%;}
 
 .recommends {
@@ -86,8 +90,98 @@ input {
 	color:#0564e8;
 	font-weight:bold;
 	border:2px solid #0564e8;
-	padding:8px 25px;
+	padding:2px 25px;
 	background-color:white;
 	border-radius:30px;
 	text-transform:capitalize;
 }
+
+
+							/*----------------------------- enter-section-------------------*/
+						
+#enter-section{
+	width:100vw;
+	height:100vh;
+	background-image:url("../image/backimg.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+}
+							/*----------------------------- login-section-------------------*/
+#login-section{
+	position:absolute;
+	top:50%;
+	left:80%;
+	transform:translate(-50%,-50%);
+	border-radius:5px;
+	box-shadow:0 0 8px 0 gray;
+	margin: auto;
+	color:white;
+	width:30vw;
+	line-height:30px;
+	padding-left:20px;
+}
+.login .heading h1{
+	color:#2977c9;
+}
+.login .heading h4{
+	text-align:center;
+	font-size:40px;
+}
+
+.login .input input{
+	padding:0 20px;
+	border-radius:20px;
+}
+#signup-btn{
+	color:blue;
+}
+					/*----------------------------- signup-section-------------------*/
+#signup-section{
+	position:absolute;
+	top:50%;
+	left:80%;
+	transform:translate(-50%,-50%);
+	border-radius:5px;
+	box-shadow:0 0 8px 0 gray;
+	color:white;
+	width:30vw;
+	padding:20px;
+}
+.signup .heading h1{
+	color:#2977c9;
+}
+.signup .heading h4{
+	text-align:center;
+	font-size:40px;
+}
+
+.signup label{
+	width:100px;
+}
+.signup .gender-tag{
+	display:inline-block;
+	width:100px;}
+.signup label.gender{
+	width:unset;
+	margin-left:20px
+}
+	/*----------------------------- profile-section-------------------*/
+	
+#profile{
+	background-color:white;
+	text-align:center;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+#profile img{
+	width:25%;
+	border-radius:50%;
+	margin-bottom:20px;
+	padding-top:20px;
+}
+.
+
+	/*----------------------------- recommends-section-------------------*/

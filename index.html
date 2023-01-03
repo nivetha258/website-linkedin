@@ -4,23 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Linkedin</title>
+	<link rel="icon" type ="image/x-icon" href="image/linkedin.jpg">
 	<link rel="stylesheet" href="icon/icofont.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="header mt-2 mb-2">
+
+
+				<!---------------------------main section starts-------------------->
+<main id="main-page">
+	<section class="header">
 		<div class="container">
-			<div class="row align-items-center pt-2">
-				<div class="col-lg-3">
-					<div class="website-icon d-flex ">
-						<i class="icofont-linkedin"></i>
-						<form role="search">
-							 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						</form>
+			<div class="row pt-2 align-items-center">
+				<div class="col-lg-4">
+					<div class=" d-flex ">
+						<i class="icofont-linkedin website-icon"></i>
+						<div class="search">
+							<i class="icofont-ui-search text-secondary"></i>
+							<form class="d-inline">
+								 <input type="search" placeholder="Search" aria-label="Search">
+							</form>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-8">
 					<div class="nav-icons d-flex align-items-center justify-content-end text-center">
 						<a href="#">
 							<i class="icofont-home"></i>
@@ -54,34 +62,95 @@
 							<a href="#">Get hired faster</a>
 							<a href="#">Try Preminum free</a>	
 						</div>
+						<div id="signout">sign-out</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="main">
+	<section class="main mt-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="profile"></div>
+					<div id="profile">					
+					</div>
 				</div>
 				<div class="col-lg-8">
-					<div class="invitation p-2 d-flex justify-content-between">
+					<div class="invitation p-2 d-flex align-items-center justify-content-between">
 						<p>No pending invitations</p>
 						<p>Manage</p>
 					</div>
 					<div id="recommends" class="recommends d-flex">
 					
-					</div>
-				
+					</div>			
 				</div>
 			</div>
 		
 		</div>
 	
 	</section>
+</main>
+				<!---------------------------main section ends-------------------->
+				
+				
+				<!---------------------------enter linkedin-section-------------------->
+<section id="enter-section">
 
+				<!---------------------------login section-------------------->
 
+	<section id="login-section">
+		<div class="login">
+			<div class="heading">
+				<h1>LINKEDIN</h1>
+				<h4>Login</h4>
+			</div>
+			<div class="input">
+				<input type="email" id="login-email" placeholder="Email"><br><br>
+				<input type="password" id="login-pwd" placeholder="Password"><br><br>	
+				<input type="button" id="login-btn" value="Login">
+				<p>Not a member? <span id="signup-btn">Signup</span></p>
+			</div>
+		</div>
+	</section>
+	
+	
+					<!---------------------------signup section-------------------->
+	
+	
+	
+	<section id="signup-section">
+	
+		<div class="signup">
+			<div class="heading">
+				<h1>LINKEDIN</h1>
+				<h4>signup</h4>
+			</div>
+			<div>
+				<label for="firstname">First Name :</label>
+					<input type="text" id="firstname"><br><br>
+				<label for="lastname">Last Name :</label>
+					<input type="text" id="lastname"><br><br>				
+				<label for="email">Email :</label>
+					<input type="email" id="email"><br><br>	
+				<label for="phone-no">Phone.no :</label>
+					<input type="tel" id="phone-no" pattern=""><br><br>
+				<p class="gender-tag">Gender :</p>
+				<label for="Female" class="gender">Female</label>
+					<input type="radio" id="female" name="gender">
+				<label for="Male" class="gender">Male</label>
+					<input type="radio" id="male" name="gender" ><br><br>
+				<label for="dob">Date of Birth :</label>
+					<input type="date" id="dob"><br><br>
+				<label for="signup-pwd">Password :</label>
+					<input type="password" id="signup-pwd"><br><br>
+				<label for="signup-confirm-pwd">Confirm Password :</label>
+					<input type="password" id="signup-confirm-pwd"><br><br>
+				<input type="submit" id="signup-submit"></input>
+			</div>
+		</div>
+	<section>	
+
+</section>
 	<script src="js/main.js"></script>
 
 </body>
