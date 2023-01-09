@@ -51,16 +51,32 @@ let data=[
 
 ]  
 
-
 											/*--------------login section--------------*/
+											
 document.getElementById("signup-section").style.display="none";
 document.getElementById("main-page").style.display="none";
 let userid,currentUser,action;
 let emailEle = document.getElementById("login-email");
 let loginPwdEle = document.getElementById("login-pwd");
+
 document.getElementById("login-btn").onclick = loginCheck;
 function loginCheck(){
 	let y=1;	
+	if((emailEle.value== "") && (loginPwdEle.value== ""))
+	{
+		alert ("Enter email and password");
+		return
+	}
+	else if(emailEle.value== "")
+	{
+		alert ("enter email");
+		return
+	}
+	else if(loginPwdEle.value== "")
+	{
+		alert ("enter password");
+		return
+	}
 	for(x of data){
 		if((emailEle.value==x.email) && (loginPwdEle.value== x.password)) 
 		{
@@ -83,7 +99,7 @@ function loginCheck(){
 		document.getElementById("signup-section").style.display="block";
 		
 	}
-// signup details section-----------
+// click signup details section-----------
 	const obj={};
 	let submitEle=document.getElementById("signup-submit");
 
@@ -107,6 +123,7 @@ function loginCheck(){
 //4.phone.no--------
 	obj.phoneNo = "";
 	let phNo=document.getElementById("phone-no").value;
+	
 	if(phNo.length==10 || phNo.length==12 )
 	{
 		if(!isNaN(phNo))
@@ -114,16 +131,12 @@ function loginCheck(){
 			phNo=parseInt(phNo);
 			obj.phoneNo = phNo
 			}
-		else
+	/*	else
 		{	alert ("enter a phone number as number");
 			return
-		}
+		} */
 	}
-	else 
-		{
-			alert("enter 10 digits or 12 digits phone number")
-			return
-		}
+
 
 //5.gender-------
 	if(document.getElementById("female").checked)
@@ -155,6 +168,8 @@ function loginCheck(){
 //8.backgroundImage-----
 
 	//obj["backgroundImage"]="url("../image/Background.png")";
+	
+	
 //validation--------
 		for(p in obj){			
 			if(typeof(obj[p])!="function")
@@ -197,8 +212,6 @@ let signoutEle=document.getElementById("signout").addEventListener("click",funct
 	document.getElementById("profile").innerText="";
 	document.getElementById("recommends").innerText="";
 })
-
-
 
 
 

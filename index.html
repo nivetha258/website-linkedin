@@ -97,58 +97,82 @@
 <section id="enter-section">
 
 				<!---------------------------login section-------------------->
-
 	<section id="login-section">
-		<div class="login">
-			<div class="heading">
-				<h1>LINKEDIN</h1>
-				<h4>Login</h4>
+		<section class="login-header pt-2 pb-2">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 heading">
+						<a href="#">Linked<i class="icofont-linkedin"></i></a>
+					</div>
+					<div id="links" class="col-lg-9 links d-flex align-items-center text-center justify-content-end">
+						<a href="#"><i class="icofont-compass"></i>Discover</a>
+						<a href="#"><i class="icofont-people"></i>People</a>
+						<a href="#"><i class="icofont-ui-video-play"></i>Learning</a>
+						<a href="#"><i class="icofont-briefcase-1"></i>Jobs</a>
+						<div class="vertical-line"></div>
+						<a href="#" id="signup-btn" class="joinnow">Join now</a>
+						<a href="#" class="header-signin">Sign in</a>
+					</div>
+				</div>
 			</div>
-			<div class="input">
-				<input type="email" id="login-email" placeholder="Email"><br><br>
-				<input type="password" id="login-pwd" placeholder="Password"><br><br>	
-				<input type="button" id="login-btn" value="Login">
-				<p>Not a member? <span id="signup-btn">Signup</span></p>
-			</div>
-		</div>
+		</section>
+		<section id="login-main" class="login-main">
+			<div class="container">
+				<div class="d-flex w-50 align-items-center justify-content-start">
+					<div>
+						<h3>Welcome to your professional community</h3>
+						<div class="input">
+							<input class="form-control-lg bg" type="email" id="login-email" placeholder="Email"><br><br>
+							<input class="form-control-lg bg " type="password" id="login-pwd" placeholder="Password"><br><br>
+							<p><a href="#">Forgot password?</a></p>
+							<input  id="login-btn" class="rounded-pill signin-bgcolor form-control-lg" type="button" value="Sign in">	
+							<p class="h-line d-flex align-items-center"><span>or</span></p>
+							<input class="rounded-pill signin-google form-control-lg" type="button" value="Sign in with google">																	
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
 	</section>
 	
-	
-					<!---------------------------signup section-------------------->
-	
+					<!---------------------------signup page section-------------------->
 	
 	
-	<section id="signup-section">
 	
-		<div class="signup">
+	<section id="signup-section">	
+		<div class="container">
 			<div class="heading">
-				<h1>LINKEDIN</h1>
-				<h4>signup</h4>
+				<a href="#">Linked<i class="icofont-linkedin"></i></a>
 			</div>
-			<div>
-				<label for="firstname">First Name :</label>
-					<input type="text" id="firstname"><br><br>
-				<label for="lastname">Last Name :</label>
-					<input type="text" id="lastname"><br><br>				
-				<label for="email">Email :</label>
-					<input type="email" id="email"><br><br>	
-				<label for="phone-no">Phone.no :</label>
-					<input type="tel" id="phone-no" pattern=""><br><br>
-				<p class="gender-tag">Gender :</p>
-				<label for="Female" class="gender">Female</label>
-					<input type="radio" id="female" name="gender">
-				<label for="Male" class="gender">Male</label>
-					<input type="radio" id="male" name="gender" ><br><br>
-				<label for="dob">Date of Birth :</label>
-					<input type="date" id="dob"><br><br>
-				<label for="signup-pwd">Password :</label>
-					<input type="password" id="signup-pwd"><br><br>
-				<label for="signup-confirm-pwd">Confirm Password :</label>
-					<input type="password" id="signup-confirm-pwd"><br><br>
-				<input type="submit" id="signup-submit"></input>
+			<div class="signup">
+				<h4 class="text-center">Make the most of your professional life</h4>
+				<div class="signup-input">
+					<label for="firstname">First Name :</label>
+						<input type="text" id="firstname"><br><br>
+					<label for="lastname">Last Name :</label>
+						<input type="text" id="lastname"><br><br>				
+					<label for="email">Email :</label>
+						<input type="email" id="email"><br><br>	
+					<label for="phone-no">Phone.no :</label>
+						<input type="tel" id="phone-no" pattern=""><br><br>
+					<p class="gender-tag">Gender :</p>
+					<label for="Female" class="gender">Female</label>
+						<input type="radio" id="female" name="gender">
+					<label for="Male" class="gender">Male</label>
+						<input type="radio" id="male" name="gender" ><br><br>
+					<label for="dob">Date of Birth :</label>
+						<input type="date" id="dob"><br><br>
+					<label for="signup-pwd">Password :</label>
+						<input type="password" id="signup-pwd"><br><br>
+					<label for="signup-confirm-pwd">Confirm Password :</label>
+						<input type="password" id="signup-confirm-pwd"><br><br>
+					<div class="text-center">
+						<input type="submit" id="signup-submit"></input>
+					</div>
+				</div>
 			</div>
 		</div>
-	<section>	
+	</section>	
 
 </section>
 	<script src="js/main.js"></script>

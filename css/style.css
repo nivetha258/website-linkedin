@@ -1,4 +1,8 @@
-main{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Rubik&display=swap');
+
+
+
+body{
 	background-color:#f3f2ef;
 }
 .header{background-color:white}
@@ -96,77 +100,6 @@ input {
 	text-transform:capitalize;
 }
 
-
-							/*----------------------------- enter-section-------------------*/
-						
-#enter-section{
-	width:100vw;
-	height:100vh;
-	background-image:url("../image/backimg.jpg");
-	background-position:center;
-	background-size:cover;
-	background-repeat:no-repeat;
-	position:relative;
-}
-							/*----------------------------- login-section-------------------*/
-#login-section{
-	position:absolute;
-	top:50%;
-	left:80%;
-	transform:translate(-50%,-50%);
-	border-radius:5px;
-	box-shadow:0 0 8px 0 gray;
-	margin: auto;
-	color:white;
-	width:30vw;
-	line-height:30px;
-	padding-left:20px;
-}
-.login .heading h1{
-	color:#2977c9;
-}
-.login .heading h4{
-	text-align:center;
-	font-size:40px;
-}
-
-.login .input input{
-	padding:0 20px;
-	border-radius:20px;
-}
-#signup-btn{
-	color:blue;
-}
-					/*----------------------------- signup-section-------------------*/
-#signup-section{
-	position:absolute;
-	top:50%;
-	left:80%;
-	transform:translate(-50%,-50%);
-	border-radius:5px;
-	box-shadow:0 0 8px 0 gray;
-	color:white;
-	width:30vw;
-	padding:20px;
-}
-.signup .heading h1{
-	color:#2977c9;
-}
-.signup .heading h4{
-	text-align:center;
-	font-size:40px;
-}
-
-.signup label{
-	width:100px;
-}
-.signup .gender-tag{
-	display:inline-block;
-	width:100px;}
-.signup label.gender{
-	width:unset;
-	margin-left:20px
-}
 	/*----------------------------- profile-section-------------------*/
 	
 #profile{
@@ -182,6 +115,128 @@ input {
 	margin-bottom:20px;
 	padding-top:20px;
 }
-.
+
 
 	/*----------------------------- recommends-section-------------------*/
+	
+	
+	/*----------------------------- login page------------------*/
+
+.login-header .heading a,#signup-section .heading a{
+	text-decoration:none;
+	font-size:36px;
+	font-weight:bold;
+	color:#0a66c2;
+}
+#login-section{background-color:white;}
+.login-header .links a{
+	text-decoration:none;
+	display:block;
+	padding:5px 20px;
+	color:#00000099;
+	font-size:14px;
+	font-weight:400;
+}	
+.login-header .links i{
+	display:block;
+	font-size:22px;
+}	
+.login-header .links div{
+	width:2px;
+	height:2em;
+	border-left:solid 1px #00000099;
+}
+.links a.joinnow{
+	font-weight:bold;
+	border-radius:30px;
+	border:solid 1px transparent;
+	padding:12px 25px;
+	margin:0 4px;
+}
+.links a.header-signin{
+	border-radius:30px;
+	border:solid 1px #0a66c2;
+	color:#0a66c2;
+	font-weight:600;
+	padding:12px 25px;
+}
+
+.links a:hover{color:black;}
+.links a.joinnow:hover{
+	background:#0000000a;
+}
+.links a.header-signin:hover{background:#70b5f91a;}
+.login-main{
+	background-image:url("../image/login-bg.svg");
+	height:80vh;
+	width:100vw;
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-size:50vw 90%;
+	padding:70px 0 0 0 ;
+}
+.login-main a{
+	text-decoration:none;
+	color:#00000099;
+}
+.login-main a:hover{
+	text-decoration:underline;
+	color:#0a66c2;}
+.login-main h3{
+	font-size:55px;
+	color:#8f5849;
+	font-weight:100;
+	padding-bottom:30px;
+}
+.login-main input{
+	width:25vw;
+	border:solid 0.2px black;	
+}
+.login-main .signin-bgcolor{
+	background:#2977c9;
+	color:white;
+	border:none;
+	margin-bottom:20px;
+}
+.login-main .signin-bgcolor:hover{background:#006097;}
+.login-main .signin-google{
+	border:solid 2px gray;
+	background:none;
+	color:#00000099;
+}
+.login-main .signin-google:hover{
+	border:solid 2px black;
+	background:#0000000a;
+}
+.login-main p.h-line span{padding:0 10px;}
+.login-main p.h-line::before ,.login-main p.h-line::after{
+	content:"";
+	background:#00000059; 
+	width:11vw;
+	height:1px;
+}
+.login-main .bg{background:#e8f0fe}
+	/*----------------------------- login page-------------------*/
+	
+	
+		/*----------------------------- signup page-------------------*/
+.signup-input{
+	background:white;
+	width:30vw;
+	margin:0 auto;
+	padding:20px 20px;
+}	
+.signup-input label{
+	width:100px;
+}
+.signup-input .gender-tag{
+	display:inline-block;
+	width:100px;}
+.signup-input label.gender{
+	width:unset;
+	margin-left:20px
+}		
+		
+			/*----------------------------- signup page-------------------*/
+	
+	
