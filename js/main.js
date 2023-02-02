@@ -53,28 +53,45 @@ let data=[
 
 											/*--------------login section--------------*/
 											
-document.getElementById("signup-section").style.display="none";
-document.getElementById("main-page").style.display="none";
+document.getElementById("signup-section").style.display = "none";
+document.getElementById("main-page").style.display = "none";
 let userid,currentUser,action;
-let emailEle = document.getElementById("login-email");
-let loginPwdEle = document.getElementById("login-pwd");
-
+let emailEle = document.getElementById("floatingInput");
+let loginPwdEle = document.getElementById("floatingPassword");
+let alertEmailEle = document.getElementById("email-alert");
+let alertPasswordEle = document.getElementById("password-alert");
+	alertEmailEle.classList.add("d-none");
+	alertPasswordEle.classList.add("d-none");
+	document.getElementById("correct-alert").classList.add("d-none")
+		
 document.getElementById("login-btn").onclick = loginCheck;
 function loginCheck(){
 	let y=1;	
-	if((emailEle.value== "") && (loginPwdEle.value== ""))
+		alertEmailEle.classList.add("d-none");
+		alertPasswordEle.classList.add("d-none");
+		emailEle.classList.toggle("error");
+		
+	if((emailEle.value == "") && (loginPwdEle.value == ""))
 	{
-		alert ("Enter email and password");
+		emailEle.classList.add("error");
+		alertEmailEle.classList.remove("d-none");
+		alertEmailEle.classList.add("d-block");
 		return
 	}
-	else if(emailEle.value== "")
-	{
-		alert ("enter email");
+	else if(emailEle.value == "")
+	{	
+		emailEle.classList.add("error");
+		loginPwdEle.classList.remove("error");
+		alertEmailEle.classList.add("d-block");
+		alertEmailEle.classList.remove("d-none");
 		return
 	}
-	else if(loginPwdEle.value== "")
+	else if(loginPwdEle.value == "")
 	{
-		alert ("enter password");
+		emailEle.classList.remove("error");
+		loginPwdEle.classList.add("error");
+		alertPasswordEle.classList.remove("d-none");
+		alertPasswordEle.classList.add("d-block");
 		return
 	}
 	for(x of data){
@@ -87,7 +104,10 @@ function loginCheck(){
 		}
 	}
 	if(y){
-		alert ("Enter correct email and password or if new user create account")
+		document.getElementById("correct-alert").classList.remove("d-none")
+		document.getElementById("correct-alert").classList.add("d-block")
+		
+		//alert ("Enter correct email and password or if new user create account")
 	}
 }
 

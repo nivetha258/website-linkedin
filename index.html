@@ -11,7 +11,6 @@
 </head>
 <body>
 
-
 				<!---------------------------main section starts-------------------->
 <main id="main-page">
 	<section class="header">
@@ -80,8 +79,7 @@
 						<p>No pending invitations</p>
 						<p>Manage</p>
 					</div>
-					<div id="recommends" class="recommends d-flex">
-					
+					<div id="recommends" class="recommends d-flex">					
 					</div>			
 				</div>
 			</div>
@@ -122,8 +120,17 @@
 					<div>
 						<h3>Welcome to your professional community</h3>
 						<div class="input">
-							<input class="form-control-lg bg" type="email" id="login-email" placeholder="Email"><br><br>
-							<input class="form-control-lg bg " type="password" id="login-pwd" placeholder="Password"><br><br>
+							<p id="email-alert">Please enter your email address or mobile number</p>
+							<p id="password-alert">Please enter your password</p>
+							<p id="correct-alert">Enter correct email and password</p>
+							<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+								<label for="floatingInput">Email address</label>
+							</div>
+							<div class="form-floating mb-3">
+								<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+								<label for="floatingPassword">Password</label>
+							</div>
 							<p><a href="#">Forgot password?</a></p>
 							<input  id="login-btn" class="rounded-pill signin-bgcolor form-control-lg" type="button" value="Sign in">	
 							<p class="h-line d-flex align-items-center"><span>or</span></p>

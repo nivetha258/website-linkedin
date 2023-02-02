@@ -14,15 +14,6 @@ body{
 	padding:5px 10px 0 10px;
 	background-color:#0d6efd1a;
 }
-
-/*
-
-input {
-	border:none;
-	background-color:transparent;
-}
-
-*/
 .header .nav-icons a {
 	display:inline-block;
 	text-decoration:none;
@@ -168,12 +159,15 @@ input {
 .links a.header-signin:hover{background:#70b5f91a;}
 .login-main{
 	background-image:url("../image/login-bg.svg");
-	height:80vh;
 	width:100vw;
 	background-position:right center;
 	background-repeat:no-repeat;
 	background-size:50vw 90%;
-	padding:70px 0 0 0 ;
+	padding:60px 0;
+}
+#email-alert,#password-alert,#correct-alert{
+	color:#d11124;
+
 }
 .login-main a{
 	text-decoration:none;
@@ -189,8 +183,23 @@ input {
 	padding-bottom:30px;
 }
 .login-main input{
-	width:25vw;
+	width:27vw;
 	border:solid 0.2px black;	
+}
+.login-main .form-floating>.form-control, .form-floating>.form-select {
+    height: calc(2.8rem + 2px);
+    line-height: 1.25;
+}
+.login-main .form-floating>.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border:2px solid #0073b1;
+    outline: 0;
+    box-shadow:0 0 0 0.5px #0073b1;
+}
+.login-main .form-control.error{
+	border-color: #d11124; 
+    box-shadow:0 0 0 0.5px #d11124;;
 }
 .login-main .signin-bgcolor{
 	background:#2977c9;
@@ -212,8 +221,8 @@ input {
 .login-main p.h-line::before ,.login-main p.h-line::after{
 	content:"";
 	background:#00000059; 
-	width:11vw;
-	height:1px;
+	width:13vw;
+	height:0.5px;
 }
 .login-main .bg{background:#e8f0fe}
 	/*----------------------------- login page-------------------*/
